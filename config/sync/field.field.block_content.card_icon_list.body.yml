@@ -1,0 +1,23 @@
+uuid: 42cebe13-a6cc-4bae-91eb-55b74c226a96
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card_icon_list
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.card_icon_list.body
+field_name: body
+entity_type: block_content
+bundle: card_icon_list
+label: Descripción
+description: 'Breve descripción general de las fichas.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,10 @@
+uuid: d279a7c4-b749-4b64-b452-4763ebb2cec1
+langcode: en
+status: true
+dependencies: {  }
+id: collapsible_item
+label: 'Elemento plegable'
+icon_uuid: null
+icon_default: null
+description: 'Permite agregar información en formato de elemento plegable.'
+behavior_plugins: {  }

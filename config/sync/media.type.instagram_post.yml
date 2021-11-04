@@ -1,0 +1,17 @@
+uuid: da4a57cd-6205-4c0b-b87e-0caf1ca02459
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity_instagram
+id: instagram_post
+label: 'Instagram post'
+description: ''
+source: 'oembed:instagram'
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  thumbnails_directory: 'public://oembed_thumbnails'
+  providers: {  }
+  source_field: field_media_oembed_instagram_1
+field_map: {  }

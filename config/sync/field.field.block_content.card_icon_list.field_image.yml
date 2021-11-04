@@ -1,0 +1,28 @@
+uuid: 997d7e68-dc5d-4c4a-9071-40d0d93cd50b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card_icon_list
+    - field.storage.block_content.field_image
+    - media.type.image
+id: block_content.card_icon_list.field_image
+field_name: field_image
+entity_type: block_content
+bundle: card_icon_list
+label: Imagen
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

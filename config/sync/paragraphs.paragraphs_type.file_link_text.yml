@@ -1,0 +1,10 @@
+uuid: c915ac79-078d-43e7-9c78-4fa0c480add7
+langcode: en
+status: true
+dependencies: {  }
+id: file_link_text
+label: 'Enlace con texto'
+icon_uuid: null
+icon_default: null
+description: 'Permite agregar información en formato de archivo o enlace con texto.'
+behavior_plugins: {  }

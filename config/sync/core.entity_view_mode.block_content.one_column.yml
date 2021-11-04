@@ -1,0 +1,10 @@
+uuid: 45ffd195-a74c-4c14-9f63-07c2905a4833
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.one_column
+label: 'Una columna'
+targetEntityType: block_content
+cache: true

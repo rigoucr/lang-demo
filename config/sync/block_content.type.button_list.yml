@@ -1,0 +1,8 @@
+uuid: 015edf74-07ac-4a2c-a9d0-bf5cc2763301
+langcode: en
+status: true
+dependencies: {  }
+id: button_list
+label: 'Lista de enlaces'
+revision: 0
+description: 'Bloque utilizado por Layout Builder para agregar un componente de Lista de botones.'

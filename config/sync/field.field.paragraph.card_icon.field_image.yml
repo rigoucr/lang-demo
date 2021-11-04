@@ -1,0 +1,28 @@
+uuid: bb3de49d-9e81-405f-87c6-6b135580d73a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image
+    - media.type.icon
+    - paragraphs.paragraphs_type.card_icon
+id: paragraph.card_icon.field_image
+field_name: field_image
+entity_type: paragraph
+bundle: card_icon
+label: Icono
+description: 'Icono de la ficha.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      icon: icon
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

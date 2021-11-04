@@ -1,0 +1,36 @@
+uuid: 335911fe-a329-48b2-8c80-0e26017e1308
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic_card
+    - field.storage.block_content.field_file_link_two_items
+    - paragraphs.paragraphs_type.file
+    - paragraphs.paragraphs_type.link
+  module:
+    - entity_reference_revisions
+id: block_content.basic_card.field_file_link_two_items
+field_name: field_file_link_two_items
+entity_type: block_content
+bundle: basic_card
+label: 'Archivo o enlace'
+description: 'Archivo o enlace para ser utilizado como botón de llamado a la acción.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      file: file
+      link: link
+    target_bundles_drag_drop:
+      file:
+        enabled: true
+        weight: 3
+      link:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

@@ -1,0 +1,40 @@
+uuid: 4747f3a3-8566-469d-800f-4bdd1e42a3a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.accordion
+    - field.storage.block_content.field_collapsible_item_unlimited
+    - paragraphs.paragraphs_type.collapsible_item
+  module:
+    - entity_reference_revisions
+id: block_content.accordion.field_collapsible_item_unlimited
+field_name: field_collapsible_item_unlimited
+entity_type: block_content
+bundle: accordion
+label: 'Elementos del acordeón'
+description: 'Elementos del acordeón.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      collapsible_item: collapsible_item
+    target_bundles_drag_drop:
+      collapsible_item:
+        enabled: true
+        weight: 4
+      file:
+        weight: 5
+        enabled: false
+      file_link_text:
+        weight: 6
+        enabled: false
+      link:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

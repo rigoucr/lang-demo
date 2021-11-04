@@ -1,0 +1,28 @@
+uuid: 8a068e5a-66d9-4442-a058-844f54a7bfdd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_file
+    - media.type.file
+    - paragraphs.paragraphs_type.file
+id: paragraph.file.field_file
+field_name: field_file
+entity_type: paragraph
+bundle: file
+label: Archivo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      file: file
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

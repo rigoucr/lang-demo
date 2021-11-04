@@ -1,0 +1,8 @@
+uuid: 386de859-d9e6-4a68-a753-e7e78387e69a
+langcode: en
+status: true
+dependencies: {  }
+id: accordion
+label: Acordeón
+revision: 0
+description: 'Bloque utilizado por Layout Builder para agregar un componente de Acordeón.'

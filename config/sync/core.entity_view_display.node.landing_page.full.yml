@@ -1,0 +1,22 @@
+uuid: 90b61f4b-94f8-4808-815e-095d4f872411
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - node.type.landing_page
+  module:
+    - user
+_core:
+  default_config_hash: GB4QNCGbVD0iPFcM-FvrUStPzqynY42DcoIFLUw1f7I
+id: node.landing_page.full
+targetEntityType: node
+bundle: landing_page
+mode: full
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

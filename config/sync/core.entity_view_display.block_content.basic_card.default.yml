@@ -1,0 +1,52 @@
+uuid: 3965530e-81fd-41f2-aa34-1d31be477ab0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic_card
+    - field.field.block_content.basic_card.field_description_unlimited
+    - field.field.block_content.basic_card.field_file_link_two_items
+    - field.field.block_content.basic_card.field_title
+    - field.field.block_content.basic_card.field_title_heading_level
+  module:
+    - entity_reference_revisions
+    - options
+    - text
+id: block_content.basic_card.default
+targetEntityType: block_content
+bundle: basic_card
+mode: default
+content:
+  field_description_unlimited:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_file_link_two_items:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_title_heading_level:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+hidden:
+  search_api_excerpt: true

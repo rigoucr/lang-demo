@@ -1,0 +1,52 @@
+uuid: fb8e6ed0-298c-4f6c-9f35-d14b2fe348ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.button_list
+    - field.field.block_content.button_list.field_file_link_text_unlimited
+    - field.field.block_content.button_list.field_title
+    - field.field.block_content.button_list.field_title_heading_level
+  module:
+    - paragraphs
+id: block_content.button_list.default
+targetEntityType: block_content
+bundle: button_list
+mode: default
+content:
+  field_file_link_text_unlimited:
+    type: paragraphs
+    weight: 2
+    settings:
+      title: enlace
+      title_plural: enlaces
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: file_link_text
+      features:
+        add_above: '0'
+        collapse_edit_all: '0'
+        duplicate: '0'
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_title_heading_level:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  info: true
+  translation: true

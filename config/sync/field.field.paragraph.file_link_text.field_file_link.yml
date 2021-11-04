@@ -1,0 +1,39 @@
+uuid: 2a691896-9585-4759-a400-f51b0f5c3c4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_file_link
+    - paragraphs.paragraphs_type.file
+    - paragraphs.paragraphs_type.file_link_text
+    - paragraphs.paragraphs_type.link
+  module:
+    - entity_reference_revisions
+id: paragraph.file_link_text.field_file_link
+field_name: field_file_link
+entity_type: paragraph
+bundle: file_link_text
+label: 'Archivo o enlace'
+description: 'Permite agregar información en formato de enlace con texto.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      file: file
+      link: link
+    target_bundles_drag_drop:
+      file:
+        enabled: true
+        weight: 4
+      file_link_text:
+        weight: 5
+        enabled: false
+      link:
+        enabled: true
+        weight: 6
+field_type: entity_reference_revisions

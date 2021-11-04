@@ -1,0 +1,13 @@
+uuid: 67dd1b8c-5e64-4f7b-89a5-99e3d0d7e250
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ca0j-PNUXgZsqdd4FG_RgNPldup6WbRK6d_us3l6G-k
+id: anonymous
+label: 'Anonymous user'
+weight: -10
+is_admin: false
+permissions:
+  - 'access content'
+  - 'view media'

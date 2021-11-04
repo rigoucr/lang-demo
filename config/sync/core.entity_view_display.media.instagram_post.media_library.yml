@@ -1,0 +1,32 @@
+uuid: 21e2b299-c949-4287-a203-c7cba2bc44dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.instagram_post.field_media_oembed_instagram
+    - field.field.media.instagram_post.field_media_oembed_instagram_1
+    - image.style.medium
+    - media.type.instagram_post
+  module:
+    - svg_image
+id: media.instagram_post.media_library
+targetEntityType: media
+bundle: instagram_post
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    weight: 0
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_media_oembed_instagram: true
+  field_media_oembed_instagram_1: true
+  name: true
+  uid: true

@@ -1,0 +1,19 @@
+uuid: 512b065d-1bd7-47f3-b091-bd1d7d8fa970
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card_icon_list
+    - field.storage.block_content.field_title
+id: block_content.card_icon_list.field_title
+field_name: field_title
+entity_type: block_content
+bundle: card_icon_list
+label: Título
+description: 'Título del componente.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

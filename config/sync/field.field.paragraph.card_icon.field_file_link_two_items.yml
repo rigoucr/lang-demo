@@ -1,0 +1,45 @@
+uuid: 3e069629-5e9d-457a-b500-8e5f6bddc74d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_file_link_two_items
+    - paragraphs.paragraphs_type.card_icon
+    - paragraphs.paragraphs_type.file
+    - paragraphs.paragraphs_type.link
+  module:
+    - entity_reference_revisions
+id: paragraph.card_icon.field_file_link_two_items
+field_name: field_file_link_two_items
+entity_type: paragraph
+bundle: card_icon
+label: 'Archivo o enlace'
+description: 'Archivos o enlaces de la ficha utilizado como botón de llamado a la acción.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      file: file
+      link: link
+    target_bundles_drag_drop:
+      card_icon:
+        weight: 6
+        enabled: false
+      collapsible_item:
+        weight: 7
+        enabled: false
+      file:
+        enabled: true
+        weight: 8
+      file_link_text:
+        weight: 9
+        enabled: false
+      link:
+        enabled: true
+        weight: 10
+field_type: entity_reference_revisions

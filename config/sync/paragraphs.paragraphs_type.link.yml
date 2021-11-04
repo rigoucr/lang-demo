@@ -1,0 +1,10 @@
+uuid: 08799251-3108-4e19-88a6-c90f720433c3
+langcode: en
+status: true
+dependencies: {  }
+id: link
+label: Enlace
+icon_uuid: null
+icon_default: null
+description: 'Permite agregar información en formato de enlace.'
+behavior_plugins: {  }

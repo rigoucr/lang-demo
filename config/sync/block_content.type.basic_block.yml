@@ -1,0 +1,8 @@
+uuid: fe440f4b-013d-443a-9a63-acdc0049649f
+langcode: en
+status: true
+dependencies: {  }
+id: basic_block
+label: 'Bloque básico'
+revision: 0
+description: 'Bloque utilizado por Layout Builder para agregar un componente de Bloque básico.'

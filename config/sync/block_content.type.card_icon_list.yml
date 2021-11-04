@@ -1,0 +1,8 @@
+uuid: 5230b0d0-4f21-441a-9181-d1079d2fafe1
+langcode: en
+status: true
+dependencies: {  }
+id: card_icon_list
+label: 'Lista de fichas con icono'
+revision: 0
+description: 'Bloque utilizado por Layout Builder para agregar un componente de Lista de fichas con icono.'

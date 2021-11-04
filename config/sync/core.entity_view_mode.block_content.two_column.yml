@@ -1,0 +1,10 @@
+uuid: 3b1fc21e-37a0-4d4c-86f2-f8ac7b1cfef1
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.two_column
+label: 'Dos columnas'
+targetEntityType: block_content
+cache: true

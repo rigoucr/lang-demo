@@ -1,0 +1,49 @@
+uuid: 41caa0b5-c3df-4046-812f-5c217f9acdb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.accordion
+    - core.entity_view_mode.block_content.two_column
+    - field.field.block_content.accordion.field_collapsible_item_unlimited
+    - field.field.block_content.accordion.field_title
+    - field.field.block_content.accordion.field_title_heading_level
+  module:
+    - entity_reference_revisions
+    - layout_builder
+    - options
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: block_content.accordion.two_column
+targetEntityType: block_content
+bundle: accordion
+mode: two_column
+content:
+  field_collapsible_item_unlimited:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_title_heading_level:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden:
+  search_api_excerpt: true

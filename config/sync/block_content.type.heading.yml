@@ -1,0 +1,8 @@
+uuid: 9a49b8f4-957a-4649-aefc-a42c39ab21af
+langcode: en
+status: true
+dependencies: {  }
+id: heading
+label: Encabezado
+revision: 0
+description: 'Bloque utilizado por Layout Builder para agregar un componente de Encabezado.'

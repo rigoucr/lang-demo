@@ -1,0 +1,10 @@
+uuid: 487b8f6b-574d-4564-ac2e-a63ba6a160af
+langcode: en
+status: true
+dependencies: {  }
+id: file
+label: Archivo
+icon_uuid: null
+icon_default: null
+description: 'Permite agregar información en formato de documento.'
+behavior_plugins: {  }

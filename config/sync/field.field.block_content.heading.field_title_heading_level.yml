@@ -1,0 +1,23 @@
+uuid: 4b267d06-aafa-49de-a2ba-a6154ae5b380
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.heading
+    - field.storage.block_content.field_title_heading_level
+  module:
+    - options
+id: block_content.heading.field_title_heading_level
+field_name: field_title_heading_level
+entity_type: block_content
+bundle: heading
+label: 'Nivel de encabezado del título'
+description: 'La etiqueta HTML que será utilizada en el campo de Título.'
+required: true
+translatable: false
+default_value:
+  -
+    value: h2
+default_value_callback: ''
+settings: {  }
+field_type: list_string

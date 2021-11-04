@@ -1,0 +1,19 @@
+uuid: ee0ed2b1-c5f9-4e1f-8fa1-135778be4657
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.button_list
+    - field.storage.block_content.field_title
+id: block_content.button_list.field_title
+field_name: field_title
+entity_type: block_content
+bundle: button_list
+label: Título
+description: 'Título del componente.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

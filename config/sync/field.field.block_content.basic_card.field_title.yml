@@ -1,0 +1,19 @@
+uuid: ae1b473f-678a-4fb4-baab-48c8473701f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic_card
+    - field.storage.block_content.field_title
+id: block_content.basic_card.field_title
+field_name: field_title
+entity_type: block_content
+bundle: basic_card
+label: Título
+description: 'Título del componente.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

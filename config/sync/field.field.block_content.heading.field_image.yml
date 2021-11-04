@@ -1,0 +1,28 @@
+uuid: 12ed67c1-b928-4e20-bc05-7ecefcbab3a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.heading
+    - field.storage.block_content.field_image
+    - media.type.image
+id: block_content.heading.field_image
+field_name: field_image
+entity_type: block_content
+bundle: heading
+label: Imagen
+description: 'Imagen del componente.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

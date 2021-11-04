@@ -1,0 +1,37 @@
+uuid: 7695bca5-2fd6-4c2e-89c5-be0e209ed596
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.button_list
+    - field.storage.block_content.field_file_link_text_unlimited
+    - paragraphs.paragraphs_type.file_link_text
+  module:
+    - entity_reference_revisions
+id: block_content.button_list.field_file_link_text_unlimited
+field_name: field_file_link_text_unlimited
+entity_type: block_content
+bundle: button_list
+label: 'Lista de enlaces'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      file_link_text: file_link_text
+    target_bundles_drag_drop:
+      file:
+        weight: 3
+        enabled: false
+      file_link_text:
+        enabled: true
+        weight: 4
+      link:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

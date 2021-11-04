@@ -1,0 +1,8 @@
+uuid: c2bd5c10-5694-4ebd-8962-5e74d3a279ae
+langcode: en
+status: true
+dependencies: {  }
+id: basic_card
+label: 'Tarjeta básica'
+revision: 0
+description: 'Bloque utilizado por Layout Builder para agregar un componente de tarjeta básica.'

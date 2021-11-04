@@ -1,0 +1,10 @@
+uuid: 7d90318f-b0d9-4371-8da4-6646f74d16ed
+langcode: en
+status: true
+dependencies: {  }
+id: card_icon
+label: 'Ficha con icono'
+icon_uuid: null
+icon_default: null
+description: 'Permite agregar información en formato de ficha con icono.'
+behavior_plugins: {  }

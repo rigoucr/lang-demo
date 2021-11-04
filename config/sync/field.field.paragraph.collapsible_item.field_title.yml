@@ -1,0 +1,19 @@
+uuid: c5e5c388-fa08-4999-a49b-48dce8971fa2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.collapsible_item
+id: paragraph.collapsible_item.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: collapsible_item
+label: Título
+description: 'Título del elemento plegable.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

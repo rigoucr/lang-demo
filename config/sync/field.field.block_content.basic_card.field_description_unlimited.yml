@@ -1,0 +1,21 @@
+uuid: 0999053e-b76f-48c9-a2e6-19753eb8cd06
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic_card
+    - field.storage.block_content.field_description_unlimited
+  module:
+    - text
+id: block_content.basic_card.field_description_unlimited
+field_name: field_description_unlimited
+entity_type: block_content
+bundle: basic_card
+label: Descripción
+description: 'Descripción del componente.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
