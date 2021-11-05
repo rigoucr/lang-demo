@@ -1,0 +1,20 @@
+uuid: 6a21e22f-25af-4034-89e7-446663c98248
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.icon
+id: media.icon.name
+field_name: name
+entity_type: media
+bundle: icon
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

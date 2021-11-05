@@ -1,11 +1,11 @@
 uuid: ff23c911-0d97-4a1c-9019-7590eaeafb6f
-langcode: en
+langcode: es
 status: true
 dependencies: {  }
 _core:
   default_config_hash: Q-1YZtZO1Q652PezxTcMDliHsioyMoAivQpn3_whSLI
 id: administrator
-label: Administrator
+label: Administrador
 weight: -7
 is_admin: true
 permissions:

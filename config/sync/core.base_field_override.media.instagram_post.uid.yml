@@ -1,0 +1,20 @@
+uuid: f3becce5-7bfb-49d2-9a09-e58d9c807835
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.instagram_post
+id: media.instagram_post.uid
+field_name: uid
+entity_type: media
+bundle: instagram_post
+label: 'Authored by'
+description: 'The user ID of the author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

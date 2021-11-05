@@ -1,5 +1,5 @@
 uuid: 1317728c-48d9-410f-8ecf-0d3e0fc20421
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
@@ -25,4 +25,5 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  langcode: true
   layout_builder__layout: true

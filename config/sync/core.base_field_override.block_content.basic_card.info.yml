@@ -1,0 +1,18 @@
+uuid: 1672e157-d249-4e63-82e3-7b3ffca0a4a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic_card
+id: block_content.basic_card.info
+field_name: info
+entity_type: block_content
+bundle: basic_card
+label: 'Block description'
+description: 'A brief description of your block.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

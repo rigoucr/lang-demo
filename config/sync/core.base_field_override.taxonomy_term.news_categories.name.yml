@@ -1,0 +1,18 @@
+uuid: 7e188930-9777-4ef9-a183-e53538b5e601
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.news_categories
+id: taxonomy_term.news_categories.name
+field_name: name
+entity_type: taxonomy_term
+bundle: news_categories
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

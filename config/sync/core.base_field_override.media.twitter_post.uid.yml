@@ -1,0 +1,20 @@
+uuid: 3610b2c5-4ca7-4f99-99e0-a4eff8f248f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.twitter_post
+id: media.twitter_post.uid
+field_name: uid
+entity_type: media
+bundle: twitter_post
+label: 'Authored by'
+description: 'The user ID of the author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

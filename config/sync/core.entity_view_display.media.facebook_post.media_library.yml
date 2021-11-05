@@ -8,7 +8,7 @@ dependencies:
     - image.style.medium
     - media.type.facebook_post
   module:
-    - image
+    - svg_image
 id: media.facebook_post.media_library
 targetEntityType: media
 bundle: facebook_post
@@ -26,5 +26,6 @@ content:
 hidden:
   created: true
   field_media_facebook: true
+  langcode: true
   name: true
   uid: true

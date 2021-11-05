@@ -12,7 +12,7 @@ bundle: card_icon
 label: Título
 description: 'Título de la ficha.'
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

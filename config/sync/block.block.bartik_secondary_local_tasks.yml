@@ -1,5 +1,5 @@
 uuid: 5903fba9-7de0-4ec1-93b6-05eccd61f92f
-langcode: en
+langcode: es
 status: true
 dependencies:
   theme:
@@ -9,12 +9,12 @@ _core:
 id: bartik_secondary_local_tasks
 theme: bartik
 region: header
-weight: -3
+weight: -2
 provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
-  label: 'Secondary tabs'
+  label: 'Solapas secundarias'
   provider: core
   label_display: '0'
   primary: false

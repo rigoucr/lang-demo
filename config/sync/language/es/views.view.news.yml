@@ -1,0 +1,15 @@
+label: Noticias
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Applicar
+      fields:
+        view_node:
+          text: 'Leer más'
+      filters:
+        field_category_target_id:
+          expose:
+            label: Categoría
+      title: Noticias

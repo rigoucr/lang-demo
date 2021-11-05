@@ -1,0 +1,18 @@
+uuid: ea170402-e9b5-4b56-8abe-88c8983ab340
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.facebook_post
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: media.facebook_post
+target_entity_type_id: media
+target_bundle: facebook_post
+default_langcode: site_default
+language_alterable: false

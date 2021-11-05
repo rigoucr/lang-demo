@@ -1,5 +1,5 @@
 uuid: 697f88c1-2fa2-4d66-bba6-63355777c6c2
-langcode: en
+langcode: es
 status: false
 dependencies:
   config:
@@ -21,4 +21,5 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  langcode: true
   layout_builder__layout: true

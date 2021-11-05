@@ -1,0 +1,20 @@
+uuid: 73f54fc7-fe5b-4908-8c2b-b5024ffe7850
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.instagram_post
+  module:
+    - path
+id: media.instagram_post.path
+field_name: path
+entity_type: media
+bundle: instagram_post
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

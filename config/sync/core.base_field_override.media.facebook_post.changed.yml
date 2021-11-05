@@ -1,0 +1,18 @@
+uuid: 4b27e48b-0e65-4c38-8133-fbc36adf942c
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.facebook_post
+id: media.facebook_post.changed
+field_name: changed
+entity_type: media
+bundle: facebook_post
+label: Changed
+description: 'The time the media item was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

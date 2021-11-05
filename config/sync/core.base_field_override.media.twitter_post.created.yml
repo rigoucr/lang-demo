@@ -1,0 +1,18 @@
+uuid: 44731427-b822-46b8-baad-fe225801041c
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.twitter_post
+id: media.twitter_post.created
+field_name: created
+entity_type: media
+bundle: twitter_post
+label: 'Authored on'
+description: 'The time the media item was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getRequestTime'
+settings: {  }
+field_type: created

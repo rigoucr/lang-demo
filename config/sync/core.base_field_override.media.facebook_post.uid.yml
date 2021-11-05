@@ -1,0 +1,20 @@
+uuid: fb7fa93d-0139-4db6-8c53-d9093d4de72e
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.facebook_post
+id: media.facebook_post.uid
+field_name: uid
+entity_type: media
+bundle: facebook_post
+label: 'Authored by'
+description: 'The user ID of the author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference
