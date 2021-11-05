@@ -1,11 +1,11 @@
 uuid: cebaa1b1-88bf-42fa-afe1-3eea25d21375
-langcode: en
+langcode: es
 status: true
 dependencies: {  }
 _core:
   default_config_hash: nX_HojtQCdDw7RcyUVttvYc0fQBNlyrnzvc8J8hC4i0
 id: authenticated
-label: 'Authenticated user'
+label: 'Usuario autenticado'
 weight: -9
 is_admin: false
 permissions:

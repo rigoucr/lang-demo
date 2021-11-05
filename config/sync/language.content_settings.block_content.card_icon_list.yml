@@ -1,0 +1,18 @@
+uuid: 88eb8fb5-fe5b-48f7-ace0-b2d5e922a7b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card_icon_list
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: block_content.card_icon_list
+target_entity_type_id: block_content
+target_bundle: card_icon_list
+default_langcode: site_default
+language_alterable: false

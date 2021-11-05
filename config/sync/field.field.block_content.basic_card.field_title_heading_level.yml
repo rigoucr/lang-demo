@@ -14,7 +14,7 @@ bundle: basic_card
 label: 'Nivel de encabezado del título'
 description: 'La etiqueta HTML que será utilizada en el campo de Título.'
 required: true
-translatable: true
+translatable: false
 default_value:
   -
     value: h2

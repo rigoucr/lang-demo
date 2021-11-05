@@ -3,3 +3,4 @@ engines:
   google: google
 custom_urls: ''
 minimum_lifetime: 86400
+langcode: es

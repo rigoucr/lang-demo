@@ -1,12 +1,14 @@
 uuid: 90b61f4b-94f8-4808-815e-095d4f872411
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.full
+    - field.field.node.landing_page.layout_builder__layout
     - node.type.landing_page
   module:
     - layout_builder
+    - layout_discovery
     - user
 third_party_settings:
   layout_builder:
@@ -41,4 +43,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  langcode: true
+  layout_builder__layout: true

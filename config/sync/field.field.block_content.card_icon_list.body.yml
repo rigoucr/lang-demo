@@ -14,7 +14,7 @@ bundle: card_icon_list
 label: Descripción
 description: 'Breve descripción general de las fichas.'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

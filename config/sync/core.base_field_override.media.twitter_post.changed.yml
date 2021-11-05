@@ -1,0 +1,18 @@
+uuid: 1fefc669-45ac-4aa2-bc59-9a5ab0313d69
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.twitter_post
+id: media.twitter_post.changed
+field_name: changed
+entity_type: media
+bundle: twitter_post
+label: Changed
+description: 'The time the media item was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

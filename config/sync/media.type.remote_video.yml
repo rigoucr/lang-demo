@@ -1,11 +1,11 @@
 uuid: edaf907d-250c-4f83-a7f4-f83d911d2ce8
-langcode: en
+langcode: es
 status: true
 dependencies: {  }
 _core:
   default_config_hash: WYycNBU0BG8-XHGrFc0wot3NQZBlG3P68tJlYf3VWcg
 id: remote_video
-label: 'Remote video'
+label: 'Video remoto'
 description: 'This media entity allows you to add YouTube and Vimeo embedding.'
 source: 'oembed:video'
 queue_thumbnail_downloads: false

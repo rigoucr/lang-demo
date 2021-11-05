@@ -8,7 +8,7 @@ dependencies:
     - image.style.medium
     - media.type.twitter_post
   module:
-    - image
+    - svg_image
 id: media.twitter_post.media_library
 targetEntityType: media
 bundle: twitter_post
@@ -26,5 +26,6 @@ content:
 hidden:
   created: true
   field_media_twitter: true
+  langcode: true
   name: true
   uid: true

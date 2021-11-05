@@ -1,0 +1,22 @@
+uuid: b2134577-a104-4c19-b2dc-22d4069b3f87
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.twitter_post
+id: media.twitter_post.status
+field_name: status
+entity_type: media
+bundle: twitter_post
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

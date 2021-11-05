@@ -1,0 +1,18 @@
+uuid: 91c37a4d-0429-4385-ace6-b1b342255fdb
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.card_icon
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.card_icon
+target_entity_type_id: paragraph
+target_bundle: card_icon
+default_langcode: site_default
+language_alterable: false

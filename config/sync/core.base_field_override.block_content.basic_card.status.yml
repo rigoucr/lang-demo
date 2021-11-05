@@ -1,0 +1,22 @@
+uuid: 9f0721df-6791-45ef-842b-b3a04842416e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic_card
+id: block_content.basic_card.status
+field_name: status
+entity_type: block_content
+bundle: basic_card
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

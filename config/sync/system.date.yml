@@ -9,3 +9,4 @@ timezone:
     default: 0
 _core:
   default_config_hash: FmRR7eCqMhRga5LZFThq08v6s2o8xVK6Fp95tSpcEAQ
+langcode: es

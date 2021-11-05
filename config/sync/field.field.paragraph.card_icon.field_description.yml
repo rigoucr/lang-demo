@@ -14,7 +14,7 @@ bundle: card_icon
 label: Descripción
 description: 'Descripción de la ficha.'
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

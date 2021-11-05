@@ -1,0 +1,22 @@
+uuid: 2b46607c-f8c9-4b1f-b5e1-a5841fd47f72
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.facebook_post
+id: media.facebook_post.status
+field_name: status
+entity_type: media
+bundle: facebook_post
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

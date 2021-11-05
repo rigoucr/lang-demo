@@ -40,3 +40,4 @@ hidden:
   field_image: true
   field_source: true
   field_tags: true
+  langcode: true

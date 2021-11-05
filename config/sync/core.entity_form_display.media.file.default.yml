@@ -1,5 +1,5 @@
 uuid: 35e4b55a-41e9-4113-a381-d38e8b2851cc
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
@@ -21,6 +21,13 @@ content:
     third_party_settings: {  }
     type: file_generic
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   name:
     type: string_textfield
     weight: 0

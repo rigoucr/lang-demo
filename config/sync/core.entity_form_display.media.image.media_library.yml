@@ -1,5 +1,5 @@
 uuid: 53176d55-6d6a-49f9-ae48-86af96fb09a0
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
     - image.style.thumbnail
     - media.type.image
   module:
-    - image
+    - svg_image
 _core:
   default_config_hash: 6IvP6hiXs5azZ0pQPfFNVTwBHLvxDMtwvKHAmfdFcaY
 id: media.image.media_library
@@ -24,6 +24,13 @@ content:
     third_party_settings: {  }
     type: image_image
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   name:
     type: string_textfield
     weight: 0
