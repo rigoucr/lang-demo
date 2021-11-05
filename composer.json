@@ -71,8 +71,6 @@
     "kint-php/kint": "^3.3",
     "kporras07/composer-symlinks": "dev-master",
     "manaticr/bloom": "^1.0",
-    "manaticr/manati-base-components": "^1.0",
-    "manaticr/manati_base_config": "^1.0",
     "pantheon-systems/drupal-integrations": "^9.0"
   },
   "require-dev": {

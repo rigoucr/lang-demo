@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d9527d707cd151b6dee1b7db9c03daed",
+    "content-hash": "29b132eae6a44358c5fb6bc73157fb50",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6167,81 +6167,6 @@
                 "source": "https://github.com/ManatiCR/bloom/tree/1.0.0"
             },
             "time": "2020-09-17T01:04:30+00:00"
-        },
-        {
-            "name": "manaticr/manati-base-components",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ManatiCR/manati_base_components.git",
-                "reference": "7a163c11dd1eabc796627e96bf38529f2c64798d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ManatiCR/manati_base_components/zipball/7a163c11dd1eabc796627e96bf38529f2c64798d",
-                "reference": "7a163c11dd1eabc796627e96bf38529f2c64798d",
-                "shasum": ""
-            },
-            "require": {
-                "manaticr/manati_base_config": "^1.0.0"
-            },
-            "type": "drupal-module",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Manati",
-                    "email": "info@estudiomanati.com"
-                },
-                {
-                    "name": "Rodrigo Espinoza Brenes",
-                    "email": "espinoza.brenes.rodrigo@gmail.com"
-                }
-            ],
-            "description": "Provides default base block components.",
-            "support": {
-                "issues": "https://github.com/ManatiCR/manati_base_components/issues",
-                "source": "https://github.com/ManatiCR/manati_base_components/tree/1.0.0"
-            },
-            "time": "2021-03-01T21:29:57+00:00"
-        },
-        {
-            "name": "manaticr/manati_base_config",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ManatiCR/manati-base-config.git",
-                "reference": "bd277041fbd08a5b5541ad6b3804d8e2cd6eac83"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ManatiCR/manati-base-config/zipball/bd277041fbd08a5b5541ad6b3804d8e2cd6eac83",
-                "reference": "bd277041fbd08a5b5541ad6b3804d8e2cd6eac83",
-                "shasum": ""
-            },
-            "type": "drupal-module",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Manati",
-                    "email": "info@estudiomanati.com"
-                },
-                {
-                    "name": "Marvin J. Cortés",
-                    "email": "marvin@estudiomanati.com"
-                }
-            ],
-            "description": "The base config used by Manatí to build sites.",
-            "support": {
-                "issues": "https://github.com/ManatiCR/manati-base-config/issues",
-                "source": "https://github.com/ManatiCR/manati-base-config/tree/1.0.0"
-            },
-            "time": "2020-09-17T19:08:01+00:00"
         },
         {
             "name": "masterminds/html5",

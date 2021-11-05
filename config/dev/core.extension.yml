@@ -34,8 +34,6 @@ module:
   layout_builder_iframe_modal: 0
   layout_discovery: 0
   link: 0
-  manati_base_components: 0
-  manati_base_config: 0
   manati_custom_ui: 0
   manati_layout_builder: 0
   manati_media: 0
