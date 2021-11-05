@@ -10,7 +10,7 @@ dependencies:
     - bartik
 id: mainnavigation
 theme: bartik
-region: secondary_menu
+region: primary_menu
 weight: -3
 provider: null
 plugin: 'system_menu_block:main'
