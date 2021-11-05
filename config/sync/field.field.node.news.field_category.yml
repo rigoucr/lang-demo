@@ -1,16 +1,16 @@
-uuid: d848873c-de7b-4fa8-bcbc-dbea82bec0bc
+uuid: 014ddbea-e918-4718-ae02-947983c44cdb
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_tags
+    - field.storage.node.field_category
     - node.type.news
-    - taxonomy.vocabulary.tags
-id: node.news.field_tags
-field_name: field_tags
+    - taxonomy.vocabulary.news_categories
+id: node.news.field_category
+field_name: field_category
 entity_type: node
 bundle: news
-label: Tags
+label: Category
 description: ''
 required: false
 translatable: false
@@ -20,7 +20,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      tags: tags
+      news_categories: news_categories
     sort:
       field: name
       direction: asc

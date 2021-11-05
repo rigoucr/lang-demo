@@ -18,10 +18,6 @@ function manati_custom_ui_theme() {
       'template' => 'block--inline-block',
       'base hook' => 'block',
     ],
-    'node__news' => [
-      'template' => 'node--news',
-      'base hook' => 'node',
-    ],
   ];
 }
 

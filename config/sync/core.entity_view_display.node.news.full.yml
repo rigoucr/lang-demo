@@ -1,8 +1,9 @@
-uuid: 1113f78f-4770-4ce1-956a-ae35d86657ab
+uuid: 40bb6ad8-f2b3-4f82-b5e7-95375bc2f5a4
 langcode: en
-status: true
+status: false
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.news.body
     - field.field.node.news.field_author
     - field.field.node.news.field_category
@@ -13,39 +14,44 @@ dependencies:
     - node.type.news
   module:
     - datetime
+    - layout_builder
     - text
     - user
-id: node.news.default
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.news.full
 targetEntityType: node
 bundle: news
-mode: default
+mode: full
 content:
   body:
     label: hidden
     type: text_default
-    weight: 2
+    weight: 101
     settings: {  }
     third_party_settings: {  }
     region: content
   field_author:
-    weight: 4
-    label: inline
+    weight: 106
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_category:
-    weight: 1
-    label: inline
+    weight: 105
+    label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
   field_date:
-    weight: 3
-    label: inline
+    weight: 103
+    label: above
     settings:
       format_type: medium
       timezone_override: ''
@@ -54,32 +60,32 @@ content:
     region: content
   field_image:
     type: entity_reference_entity_view
-    weight: 0
-    label: hidden
+    weight: 108
+    label: above
     settings:
-      view_mode: wide
+      view_mode: default
       link: false
     third_party_settings: {  }
     region: content
   field_source:
-    weight: 5
-    label: inline
+    weight: 107
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_tags:
-    weight: 6
-    label: inline
+    weight: 102
+    label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
   links:
-    weight: 7
-    region: content
+    weight: 100
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden: {  }
