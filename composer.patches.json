@@ -1,5 +1,18 @@
 
 {
   "patches": {
+    "drupal/core": {
+      "https://www.drupal.org/project/drupal/issues/2833864": "https://www.drupal.org/files/issues/2018-05-04/2833864-5-quick_fix.patch",
+      "Custom Layout builder components patch": "https://gist.githubusercontent.com/rigoucr/75617ecddd4f202d1859602d6684bb6a/raw/da34626bbb3bb7e801c029e8a70dbbde86f4cd79/8-layout-builder-components.patch"
+    },
+    "drupal/layout_builder_modal": {
+      "https://www.drupal.org/project/layout_builder_modal/issues/3133695": "https://www.drupal.org/files/issues/2020-10-21/3133695-7.patch"
+    },
+    "drupal/paragraphs": {
+      "https://www.drupal.org/project/paragraphs/issues/2901390": "https://www.drupal.org/files/issues/2021-05-03/paragraphs-2901390-82-withtests.patch"
+    },
+    "drupal/metatag": {
+      "https://www.drupal.org/project/metatag/issues/3077442": "https://www.drupal.org/files/issues/2021-08-03/metatag-3077442-6.patch"
+    }
   }
 }

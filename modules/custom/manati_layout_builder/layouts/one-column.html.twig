@@ -1,0 +1,12 @@
+{% if content %}
+  <div{{ attributes }}>
+    {% include '@manati_layout_builder/summary-line.html.twig' %}
+    <div class="layout__content">
+      {% if content.content %}
+        <div {{ region_attributes.content }}>
+          {{ content.content }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}

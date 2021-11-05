@@ -1,0 +1,11 @@
+uuid: 6ecdf862-a77f-4825-bb48-2fa497ae824b
+langcode: en
+status: true
+dependencies: {  }
+id: header
+block_id: 'inline_block:heading'
+category: main
+label: Header
+weight: -100
+image_path: ''
+image_alt: ''

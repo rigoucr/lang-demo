@@ -1,0 +1,44 @@
+{% set layout = {
+  'one_column': 'Una columna',
+  'two_column': 'Dos columnas',
+  'three_column': 'Tres columnas',
+} %}
+
+{% set background = {
+  'white': 'Blanco',
+  'gray-extra-light': 'Gris claro',
+  'bone': 'Hueso',
+  'blue-light-pastel': 'Celeste pastel',
+  'gradient-petrols': 'Gradiente petrols',
+  'gradient-pastel': 'Gradiente cielo',
+  'gradient-blueWhite': 'Gradiente azul-blanco',
+} %}
+
+{% set spaces = {
+  'none': 'Ninguno',
+  'small': 'Pequeño',
+  'medium': 'Medio',
+  'large': 'Grande',
+} %}
+
+{% set column_proportions = {
+  '50-50': '50% - 50%',
+  '30-70': '30% - 70%',
+  '40-60': '40% - 60%',
+  '70-30': '70% - 30%',
+  '60-40': '60% - 40%',
+} %}
+
+<p class="layout__summary">
+  <strong>{{ layout[content['#theme']] }}</strong>
+  | Color de fondo: <strong>{{ background[content['#settings']['background']] }}</strong>
+  | Espacio superior: <strong>{{ spaces[content['#settings']['spacing_top']] }}</strong>
+  | Espacio inferior: <strong>{{ spaces[content['#settings']['spacing_bottom']] }}</strong>
+  {% if content['#theme'] != 'one_column' %}
+    {% if content['#theme'] == 'two_column' %}
+    | Proporción de columnas: <strong>{{ column_proportions[content['#settings']['column_proportions']] }}</strong>
+    {% endif %}
+    | Espacio entre columnas: <strong>{{ spaces[content['#settings']['spacing_columns']] }}</strong>
+    | Igual alto de columnas: <strong>{{ content['#settings']['equal_height'] ? 'Sí' : 'No' }}</strong>
+  {% endif %}
+</p>

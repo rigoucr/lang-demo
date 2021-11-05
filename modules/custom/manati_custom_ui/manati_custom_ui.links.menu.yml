@@ -1,0 +1,6 @@
+manati_custom_ui.fe_content_preview_settings:
+  title: Configuración de previsualización de aplicación Frontend
+  description: Configuración de previsualización de aplicación Frontend
+  route_name: manati_custom_ui.frontend_site_settings
+  parent: system.admin_config_system
+  weight: 99

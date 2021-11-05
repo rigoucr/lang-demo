@@ -6,7 +6,29 @@ dependencies:
     - core.entity_view_mode.node.full
     - node.type.landing_page
   module:
+    - layout_builder
     - user
+third_party_settings:
+  layout_builder:
+    allow_custom: true
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          7e3113aa-25a9-40b4-930d-75b4073fae0c:
+            uuid: 7e3113aa-25a9-40b4-930d-75b4073fae0c
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:landing_page:links'
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
 _core:
   default_config_hash: GB4QNCGbVD0iPFcM-FvrUStPzqynY42DcoIFLUw1f7I
 id: node.landing_page.full

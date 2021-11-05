@@ -1,0 +1,4 @@
+administer fe app preview:
+  title: 'Administer Frontend app preview settings'
+  description: 'Administer the settings for the FE app content preview link present in the nodes display.'
+  restrict access: true

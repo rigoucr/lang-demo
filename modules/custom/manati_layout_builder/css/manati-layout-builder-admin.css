@@ -1,0 +1,81 @@
+/* Styles for layout builder form. */
+
+.layout-builder-form {
+  margin-bottom: 1.25rem;
+}
+
+
+.layout-builder-form .form-wrapper .form-item__label {
+  min-width: 100%;
+  align-self: center;
+  margin-left: 0.5rem;
+}
+
+.layout-builder-form input {
+  margin-right: px2rem(10);
+}
+
+.layout-builder-form input[type='submit'] {
+  margin-bottom: px2rem(10);
+}
+
+.layout-builder-form .form-item {
+  display: flex;
+  max-width: none;
+  margin-bottom: 0;
+}
+
+.layout-builder-form .vertical-tabs {
+  width: 100%;
+}
+
+.layout-builder-form .vertical-tabs .form-item {
+  padding: 0.625rem;
+}
+
+/* Discard changes / Revert confirmation form. */
+
+.layout-builder-discard-changes .form-actions,
+.layout-builder-revert-overrides .form-actions {
+  margin-top: 1.25rem;
+  display: flex;
+}
+
+.layout-builder-discard-changes input[type='submit'],
+.layout-builder-revert-overrides input[type='submit'] {
+  margin-right: 0.625rem;
+}
+
+/* Add section / block sidebar. */
+#drupal-off-canvas {
+  background-color: #fff;
+}
+
+@media (min-width: 30em) {
+  .layout-builder-form + #layout-builder {
+    margin-bottom: 3.125rem;
+  }
+
+  .layout-builder-form .form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    background: #000;
+    padding: 1rem;
+    margin: 0;
+    justify-content: center;
+    border-top: solid 4px #666;
+  }
+
+  .layout-builder-form .form-actions .form-item__label {
+    color: #fff;
+  }
+
+  .layout-builder-form input[type='submit'] {
+    margin-bottom: 0;
+  }
+}

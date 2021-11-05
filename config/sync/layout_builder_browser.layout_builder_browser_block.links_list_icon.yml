@@ -1,0 +1,11 @@
+uuid: 7163904f-31ad-4ccc-bc05-9a54f349f0f8
+langcode: en
+status: true
+dependencies: {  }
+id: links_list_icon
+block_id: 'inline_block:card_icon_list'
+category: main
+label: 'Links list with Icon'
+weight: -100
+image_path: ''
+image_alt: ''

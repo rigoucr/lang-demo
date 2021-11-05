@@ -1,0 +1,17 @@
+{% if content %}
+  <div{{ attributes }}>
+    {% include '@manati_layout_builder/summary-line.html.twig' %}
+    <div class="layout__content">
+      {% if content.first %}
+        <div {{ region_attributes.first.addClass('layout__column', 'layout__column--first') }}>
+          {{ content.first }}
+        </div>
+      {% endif %}
+      {% if content.second %}
+        <div {{ region_attributes.second.addClass('layout__column', 'layout__column--second') }}>
+          {{ content.second }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}

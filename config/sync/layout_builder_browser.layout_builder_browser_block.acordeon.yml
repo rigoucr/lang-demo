@@ -1,0 +1,11 @@
+uuid: 29d454aa-0555-47d9-881f-72fcaf2f53e2
+langcode: en
+status: true
+dependencies: {  }
+id: acordeon
+block_id: 'inline_block:accordion'
+category: main
+label: Acordeón
+weight: -100
+image_path: ''
+image_alt: ''

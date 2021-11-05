@@ -1,0 +1,11 @@
+uuid: e70d5829-7a96-4bd3-8f5d-64285740adc0
+langcode: en
+status: true
+dependencies: {  }
+id: basic_card
+block_id: 'inline_block:basic_card'
+category: main
+label: basic_card
+weight: -100
+image_path: ''
+image_alt: ''

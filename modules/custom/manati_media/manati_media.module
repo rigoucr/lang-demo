@@ -1,0 +1,34 @@
+<?php
+
+/**
+ * @file
+ * Manatí media customizations.
+ */
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function manati_media_preprocess_media(&$variables) {
+  $media = $variables['media'];
+  $variables['attributes']['data-media-source'] = $media->bundle();
+  $variables['attributes']['data-media-view-mode'] = $variables['view_mode'];
+  $variables['attributes']['data-media-source-value'] = $media
+    ->getSource()
+    ->getSourceFieldValue($media);
+}
+
+/**
+ * Implements hook_theme().
+ */
+function manati_media_theme() {
+  return [
+    'field__media__image' => [
+      'template' => 'field--media--image',
+      'base hook' => 'field',
+    ],
+    'field__media__icon' => [
+      'template' => 'field--media--icon',
+      'base hook' => 'field',
+    ],
+  ];
+}

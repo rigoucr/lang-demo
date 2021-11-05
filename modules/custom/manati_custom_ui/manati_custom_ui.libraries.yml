@@ -1,0 +1,8 @@
+manati-custom-ui:
+  css:
+    component:
+      css/manati-custom-ui.css: {}
+ckeditor_stylesheets:
+  css:
+    component:
+      css/ckeditor-custom-styles.css: {}

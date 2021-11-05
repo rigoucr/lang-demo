@@ -1,0 +1,159 @@
+/* 1, 2 and 3 column layout */
+
+/* General styles */
+
+:root {
+  --spacing-sm: 2rem;
+  --spacing-md: 3.5rem;
+  --spacing-lg: 4.5rem;
+  --spacing-cols-sm: 1.5rem;
+  --spacing-cols-md: 3rem;
+  --spacing-cols-lg: 4rem;
+  --white: #fff;
+  --gray-extra-light: #eff3f9;
+  --bone: #f6f9fc;
+  --blue-light-pastel: #eaf5ff;
+  --gradient-petrols: linear-gradient(90deg, #194d5b 0%, #00758d 100%);
+  --gradient-pastel: linear-gradient(90deg, #e3faff 0%, #b6c9f2 100%);
+  --gradient-blueWhite: linear-gradient(180deg, #002f87 15%, #5b79b1 55%,#afbdd8 75%, #f6f9fc 100%);
+}
+
+/* Section vertical spacing */
+.layout {
+  margin-bottom: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+/* Fixed width variant */
+.layout--fixed-width .layout__content {
+  max-width: 76.5rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Background colors */
+.layout--background-transparent {
+  background-color: transparent;
+}
+
+.layout--background-white {
+  background-color: var(--white);
+}
+
+.layout--background-gray-extra-light {
+  background-color: var(--gray-extra-light);
+}
+
+.layout--background-bone {
+  background-color: var(--bone);
+}
+
+.layout--background-blue-light-pastel {
+  background-color: var(--blue-light-pastel);
+}
+
+.layout--background-gradient-petrols {
+  background-image: var(--gradient-petrols);
+}
+
+.layout--background-gradient-pastel {
+  background-image: var(--gradient-pastel);
+}
+
+.layout--background-gradient-blueWhite {
+  background-image: var(--gradient-blueWhite);
+}
+
+.layout--twocol .layout__column + .layout__column,
+.layout--threecol .layout__column + .layout__column {
+  margin-top: 1.5rem;
+}
+
+.layout--twocol .layout__column:last-child, .layout--threecol .layout__column:last-child {
+  margin-bottom: 0;
+}
+
+/* Summary line. */
+.layout__summary {
+  font-size: 0.75rem;
+  margin: 0 0 0.5rem;
+}
+
+.layout--background-gradient-petrols .layout__summary,
+.layout--background-gradient-blueWhite .layout__summary {
+  color: #c8c9c7;
+}
+
+/* Specific styles for admin interface */
+.layout-builder__layout {
+  margin-top: 0.5rem;
+}
+
+.layout-builder__region {
+  padding: 1rem;
+}
+
+@media (min-width: 48em) {
+  .layout--twocol .layout__content, .layout--threecol .layout__content {
+    display: grid;
+  }
+
+  .layout--twocol .layout__column + .layout__column,
+  .layout--threecol .layout__column + .layout__column {
+    margin-top: 0;
+  }
+
+  /* Two column layout column proportions */
+  .layout--twocol-50-50 .layout__content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .layout--twocol-60-40 .layout__content {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .layout--twocol-40-60 .layout__content {
+    grid-template-columns: 2fr 3fr;
+  }
+
+  .layout--twocol-70-30 .layout__content {
+    grid-template-columns: 7fr 3fr;
+  }
+
+  .layout--twocol-30-70 .layout__content {
+    grid-template-columns: 3fr 7fr;
+  }
+
+  /* Three column layout */
+  .layout--threecol .layout__content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* Column spacing */
+  .layout--spacing-cols-small .layout__content {
+    grid-column-gap: var(--spacing-sm);
+  }
+
+  .layout--spacing-cols-medium .layout__content {
+    grid-column-gap: var(--spacing-md);
+  }
+
+  .layout--spacing-cols-large .layout__content {
+    grid-column-gap: var(--spacing-lg);
+  }
+
+  /* Equal height elements */
+  .layout--content-equal-height .layout__column > div:first-child:last-child,
+  .layout--content-equal-height .layout__column > article:first-child:last-child,
+  .layout--content-equal-height .layout__column > section:first-child:last-child {
+    height: 100%;
+  }
+}
+
+@media (min-width: 76.5rem) {
+  .layout--fixed-width .layout__content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

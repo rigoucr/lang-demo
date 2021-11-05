@@ -1,0 +1,65 @@
+<?php
+
+/**
+ * @file
+ * This file includes multiple UI customizations for the drupal admin interface.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function manati_custom_ui_theme() {
+  return [
+    'node__landing_page' => [
+      'template' => 'node--landing-page',
+      'base hook' => 'node',
+    ],
+    'block__inline_block' => [
+      'template' => 'block--inline-block',
+      'base hook' => 'block',
+    ],
+    'node__news' => [
+      'template' => 'node--news',
+      'base hook' => 'node',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function manati_custom_ui_preprocess_node(&$variables) {
+  $variables['frontend_site_url'] = \Drupal::config('manati_custom_ui.frontend_site.settings')->get('site_url');
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function manati_custom_ui_preprocess_block(&$variables) {
+  if ($variables['base_plugin_id'] === 'inline_block') {
+    $block = $variables['content']['#block_content'];
+    $variables['block_type_label'] = $block->type->entity->get('label');
+  }
+}
+
+/**
+ * Implements hook_ckeditor_css_alter().
+ */
+function manati_custom_ui_ckeditor_css_alter(array &$css) {
+  $css[] = drupal_get_path('module', 'manati_custom_ui') . '/css/ckeditor-custom-styles.css';
+}
+
+/**
+ * Implements hook_theme_registry_alter().
+ */
+function manati_custom_ui_theme_registry_alter(&$theme_registry) {
+  $entities_custom_templates = [
+    'field__text_with_summary',
+    'field__text_long',
+    'field__text',
+  ];
+
+  foreach ($entities_custom_templates as &$entity) {
+    $theme_registry[$entity]['path'] = drupal_get_path('module', 'manati_custom_ui') . '/templates';
+  }
+}

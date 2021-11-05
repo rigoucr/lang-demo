@@ -1,0 +1,9 @@
+manati_custom_ui.frontend_site_settings:
+  path: '/admin/config/frontend-site-settings'
+  defaults:
+    _title: 'Configuración del sitio público'
+    _form: 'Drupal\manati_custom_ui\Form\FrontendSiteSettingsForm'
+  requirements:
+    _permission: 'administer fe app preview'
+  options:
+    _admin_route: TRUE

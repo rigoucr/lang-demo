@@ -1,0 +1,6 @@
+name: Manatí Media Customizations
+type: module
+description: This module provides some customizations for media elements.
+package: MANATI
+core: 8.x
+core_version_requirement: ^8 || ^9

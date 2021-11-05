@@ -29,9 +29,16 @@ module:
   image: 0
   image_style_quality: 0
   inline_form_errors: 0
+  layout_builder: 0
+  layout_builder_browser: 0
+  layout_builder_iframe_modal: 0
+  layout_discovery: 0
   link: 0
   manati_base_components: 0
   manati_base_config: 0
+  manati_custom_ui: 0
+  manati_layout_builder: 0
+  manati_media: 0
   media: 0
   media_entity_facebook: 0
   media_entity_instagram: 0
